@@ -1,0 +1,92 @@
+.button-wrap{
+    .btn-head{color:$grey-clr;}
+    .btn{
+        color:$white-txt;
+        text-transform: uppercase;
+        cursor: pointer;
+        
+        //normal button
+        &.nrml-btn-de{
+            background-color: $grey-clr;
+        }
+        &.nrml-btn-info{
+            background-color: $blue-clr;
+        }
+        &.nrml-btn-su{
+            background-color: $green-clr;
+        }
+        &.nrml-btn-wa{
+            background-color: $orange-clr;
+        }
+        &.nrml-btn-da{
+            background-color: $red-clr;
+        }
+
+        //hover button
+        &.hvr-btn-de{
+            background-color: $grey-clr;
+            &:hover{background-color: $grey-clr-hvr}
+        }
+        &.hvr-btn-info{
+            background-color: $blue-clr;
+            &:hover{background-color: $blue-clr-hvr;}
+        }
+        &.hvr-btn-su{
+            background-color: $green-clr;
+            &:hover{background-color: $green-clr-hvr;}
+        }
+        &.hvr-btn-wa{
+            background-color: $orange-clr;
+            &:hover{background-color: $orange-clr-hvr;}
+        }
+        &.hvr-btn-da{
+            background-color: $red-clr;
+            &:hover{background-color: $red-clr-hvr;}
+        }
+
+        //active button
+        &.act-btn-de{
+            background-color: $grey-clr;
+            &:active{background-color: $grey-clr-hvr;}
+        }
+        &.act-btn-info{
+            background-color: $blue-clr;
+            &:active{background-color: $blue-clr-hvr;}
+        }
+        &.act-btn-su{
+            background-color: $green-clr;
+            &:active{background-color: $green-clr-hvr;}
+        }
+        &.act-btn-wa{
+            background-color: $orange-clr;
+            &:active{background-color: $orange-clr-hvr;}
+        }
+        &.act-btn-da{
+            background-color: $red-clr;
+            &:active{background-color: $red-clr-hvr;}
+        }
+
+        //focus button
+        &.focus-btn-de{
+            background-color: $grey-clr;
+            &:focus{box-shadow: 0px 5px 10px $heading-color;}
+        }
+        &.focus-btn-info{
+            background-color: $blue-clr;
+            &:focus{box-shadow: 0px 5px 10px $heading-color;}
+        }
+        &.focus-btn-su{
+            background-color: $green-clr;
+            &:focus{box-shadow: 0px 5px 10px $heading-color;}
+        }
+        &.focus-btn-wa{
+            background-color: $orange-clr;
+            &:focus{box-shadow: 0px 5px 10px $heading-color;}
+        }
+        &.focus-btn-da{
+            background-color: $red-clr;
+            &:focus{box-shadow: 0px 5px 10px $heading-color;}
+        }
+
+    }
+}

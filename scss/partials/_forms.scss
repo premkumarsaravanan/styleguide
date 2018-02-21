@@ -1,0 +1,15 @@
+.frm-wrap{
+    .frm-head{color:$grey-clr;}
+    .frm-dsn{
+        border-radius: 0px;
+        &.frm-focus:hover{
+            border-color: $green-clr;
+        }
+        &.frm-focus:focus{
+            border-color: $red-clr;
+        }
+        &.frm-focus:active{
+            border-color: $blue-clr;
+        }
+    }
+}

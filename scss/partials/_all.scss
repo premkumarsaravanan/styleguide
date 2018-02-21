@@ -1,0 +1,69 @@
+.card-wrap {
+    .head-title{
+        color:$heading-color;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .head-wrap{
+        h1,h3,h4,h5,h6{
+            color:$black-txt;
+            padding-bottom:15px;
+        }
+        h2{color: $grey-clr; padding-bottom:15px;}
+        span{color:$grey-clr;}
+        .top-ht{padding-top:25px;}
+    }
+}
+
+//transition
+.anime-trans{
+    width: 100px;
+    height: 100px;
+    background-color: $blue-clr;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    &:hover{
+        width: 300px;
+        //background-color: $red-clr;
+    }
+}
+
+//transform
+@mixin border($val,$bdr-clr) {
+    border: solid $val $bdr-clr;
+}
+
+@mixin trans-rotate($trans){
+    transform: rotate(#{$trans}deg);
+    -moz-transform: rotate(#{$trans}deg);
+    -o-transform: rotate(#{$trans}deg);
+    -ms-transform: rotate(#{$trans}deg);
+    -webkit-transform: rotate(#{$trans}deg);
+}
+
+.transform{
+    width: 200px;
+    text-align: center;
+    color: $white-txt;
+    background-color: $orange-clr;
+    height: 100px;
+    //rotate
+    &.rotate{
+        @include border(1px,$orange-clr);
+        @include trans-rotate(7);
+        //transform: rotate(7deg);
+    }
+}
+
+//images
+@for $i from 1 through 6 {
+
+    .img_bg:nth-child(#{$i}) {
+        .for_img {
+            background-image: url(../images/img#{$i}.png);
+            width: 128px;
+            height: 128px;
+          }
+    } 
+}
